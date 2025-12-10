@@ -99,9 +99,11 @@ Dense (8, Softmax)
 - **Flagged as Errors**: ~4,945 images (~58%)
 - **Clean Dataset**: 3,593 images
 - **Error Types Detected**:
-  1. Incorrect image dimensions
-  2. Wrong file formats (.heic files)
-  3. Mislabeled images (detected by Cleanlab)
+  1. **Corrupted/Unreadable Images**: Could not be loaded by OpenCV
+  2. **Wrong File Formats**: .heic files (not supported in processing pipeline)
+  3. **Mislabeled Images**: Detected by Cleanlab using deep learning confidence analysis
+
+**Note**: Image resizing to 150x150 is standard preprocessing, not error handling.
 
 ### Model Performance
 Performance metrics will be available after training the model on the clean dataset.
