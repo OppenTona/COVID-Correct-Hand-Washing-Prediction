@@ -23,6 +23,7 @@ COVID-Correct-Hand-Washing-Prediction/
 ├── image_labels.txt                        # Original image labels
 ├── image_labels.cleaned.txt               # Cleaned image labels
 ├── assignment2_rubrics.pdf                # Assignment requirements and rubrics
+├── brightspace.hud.ac.uk-Feedback[...].jpeg  # Instructor feedback screenshot
 └── README.md                              # This file
 ```
 
