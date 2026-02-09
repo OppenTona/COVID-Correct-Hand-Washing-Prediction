@@ -38,6 +38,7 @@ COVID-Correct-Hand-Washing-Prediction/
 - Pandas
 - Matplotlib
 - OpenCV
+- SHAP (for model explainability)
 
 ### Installation
 
@@ -49,7 +50,9 @@ cd COVID-Correct-Hand-Washing-Prediction
 
 2. Install required dependencies:
 ```bash
-pip install tensorflow numpy pandas matplotlib opencv-python jupyter
+pip install -r requirements.txt
+# Or install individually:
+pip install tensorflow numpy pandas matplotlib opencv-python jupyter shap
 ```
 
 3. Launch Jupyter Notebook:
@@ -93,12 +96,25 @@ The model demonstrates:
 - Effective classification of correct vs incorrect hand washing techniques
 - Optimized performance for mobile device deployment
 - Comprehensive evaluation metrics and validation
+- **Model explainability through SHAP** (SHapley Additive exPlanations)
+  - Visual explanations of which image regions influence predictions
+  - Transparency in model decision-making process
+  - Critical for healthcare applications requiring interpretability
 
 ## 🔧 Usage
 
 1. **Data Preparation**: Run `labelling_error.ipynb` to clean and prepare the dataset
 2. **Model Training**: Execute `u2560895_NguyenTheToan_Asignment2_MoblieNET.ipynb` to train the MobileNet model
 3. **Evaluation**: Analyze model performance using the built-in evaluation metrics
+4. **Model Explainability**: Use SHAP visualizations to understand model predictions and decision-making
+
+### SHAP Integration
+
+The project now includes SHAP (SHapley Additive exPlanations) for model interpretability:
+- **Visual explanations**: See which parts of images influence predictions
+- **Trust & transparency**: Understand model decisions for healthcare applications
+- **Debugging tool**: Verify model focuses on relevant features (hand positions, washing techniques)
+- **Educational value**: Provides interpretable feedback for proper hand washing education
 
 ## 📝 Course Information
 
