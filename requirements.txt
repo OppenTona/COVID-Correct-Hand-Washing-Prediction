@@ -1,0 +1,23 @@
+# Core dependencies for COVID-19 Hand Washing Prediction Project
+tensorflow>=2.8.0
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+opencv-contrib-python>=4.5.0
+scikit-learn>=1.0.0
+jupyter>=1.0.0
+
+# Model explainability
+shap>=0.41.0
+
+# Image processing
+pillow-heif>=0.10.0
+
+# Data cleaning
+cleanlab>=2.0.0
+
+# Machine learning
+xgboost>=1.5.0
+
+# Utilities
+importnb>=0.7.0
